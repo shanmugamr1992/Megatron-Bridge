@@ -21,7 +21,7 @@ import torch
 from megatron.core.models.mamba import MambaModel as MCoreMambaModel
 from megatron.core.ssm.mamba_hybrid_layer_allocation import Symbols, parse_hybrid_pattern
 from megatron.core.models.mamba.mamba_layer_specs import mamba_stack_spec as default_mamba_stack_spec
-from megatron.core.models.mamba.mamba_layer_specs import default_mamba_inference_stack_spec
+from megatron.core.models.mamba.mamba_layer_specs import mamba_inference_stack_spec as default_mamba_inference_stack_spec
 from megatron.core.pipeline_parallel.utils import is_pp_first_stage, is_pp_last_stage
 from megatron.core.post_training.modelopt.mamba.model_specs import get_mamba_stack_modelopt_spec
 from megatron.core.process_groups_config import ProcessGroupCollection
